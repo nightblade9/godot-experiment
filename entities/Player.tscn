@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://entities/Player.gd" type="Script" id=1]
+[ext_resource path="res://components/PhysicsKeyboardMove2D.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -30,8 +31,6 @@ angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision" ]
-acceleration = 2000
-max_movement_speed = 800
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
@@ -55,5 +54,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 color = Color( 1, 1, 1, 1 )
 _sections_unfolded = [ "Anchor", "Margin" ]
+
+[node name="PhysicsKeyboardMove2D" parent="." index="2" instance=ExtResource( 2 )]
 
 
