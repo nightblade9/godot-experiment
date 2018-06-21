@@ -9,8 +9,6 @@
 
 position = Vector2( 510, 310 )
 _sections_unfolded = [ "Collision", "collision" ]
-acceleration = 2000
-max_movement_speed = 800
 
 [node name="RigidBody2D" parent="." index="1" instance=ExtResource( 2 )]
 
